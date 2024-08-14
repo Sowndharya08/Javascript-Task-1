@@ -1,0 +1,42 @@
+<script>
+
+//task 26: string to number
+
+var a="true";
+var b=10+true; //implicit
+console.log(b);
+
+
+a="1200";
+console.log(Number(a)+100); //explicit conversion (Manual)
+
+//task 27
+a= true;
+a=String(a); //boolean to String
+console.log(typeof(a));
+b= "false";
+b=Boolean(b); //string to boolean
+console.log(typeof(b));
+
+//task 28
+
+let n1=parseInt(prompt("enter x:"));
+let n2=parseInt(prompt("enter y:"));
+
+console.log(n1+n2);
+console.log(n1-n2);
+console.log(n1/n2);
+console.log(n1%n2);
+
+
+//task 29
+   for(let i=1;i<5;i++){
+    console.log(i*2);
+   }
+
+//task 30
+let exp= 50+40/10*2-8;//Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-)
+
+console.log(exp);
+
+</script>

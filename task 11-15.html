@@ -1,0 +1,24 @@
+<script>
+
+//task 11,12,14
+'use strict'
+  a=10; //(gives reference error saying a it 'a' is  not defined,without 'use strict'
+ // it doesnt give any error!)
+ console.log(a);
+
+//task 13
+
+let b;
+delete b;// In strict mode it is throwing an error (SyntaxError: Delete of an unqualified identifier in strict mode)
+//The delete operator can only delete properties on an object. Object properties are "qualified" if they are configurable.
+
+
+
+//task 15
+let package;
+package=null;
+console.log(package); //(future reserved words can not  be used in strict mode EG: package,public,private,static.interface,etc..)
+// it gives SyntaxError: Unexpected strict mode reserved word
+
+
+</script>

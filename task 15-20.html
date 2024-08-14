@@ -1,0 +1,36 @@
+<script>
+//task 16,17
+
+/*
+let a=10;
+console.log(a);
+let a=50;//SyntaxError: Identifier 'a' has already been declared ,Redeclaration is not allowed!
+console.log(a);
+
+var a=10;
+var a=50;// NO visible errors,therefore var keyword allows redeclaration of variables
+console.log(a);
+
+//task 17
+
+const b="hi";
+const b="point";// throws "Cannot redeclare block-scoped variable 'b' "
+
+*/
+
+//task 18
+let a;
+console.log(a);// gives undefined
+
+//task 19
+let b=40;
+b="hello!";
+b=true;
+console.log(typeof(b)); //even though number,string,boolean were assigned to b,it prints "boolean".the last assigned value's type  
+
+
+//task 20
+let obj={x:10};
+const { x: y } = obj;
+console.log(y);   //here this syntax is used to change the propertyy namee
+</script>

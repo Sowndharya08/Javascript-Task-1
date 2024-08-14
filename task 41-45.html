@@ -1,0 +1,36 @@
+<script>
+    //Task 41 finding leap year or not
+    let year=leapyrornot(2024);
+    function leapyrornot(year){
+
+        return ((year % 4 == 0 )&&((year % 100 != 0 )||( year % 400 == 0)));
+
+
+    }
+    if(year==true){
+        console.log("YES");
+    }
+    else{
+        console.log("NO");
+    }
+//Task 42
+let n=parseInt(prompt("enter n:"));
+if(n>9 && n<=99){
+    console.log("n is two digit number");
+}
+else{
+    console.log("NA");
+}
+
+
+//Task 43
+console.log(!true);
+console.log(!false);
+
+//Task 44,45
+console.log((5 && 3)||(7 && 8) );
+console.log(("hi" && "Bye") || ("hey" && "seeya"));
+
+
+
+</script>

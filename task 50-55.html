@@ -1,0 +1,52 @@
+<script>
+
+    //Task 51
+    greet = (name) => {
+  console.log( "Hello ,"+name);
+}
+greet("Sowndharya");
+greet("kitty");
+greet("Mr.Bean");
+
+//Task 52
+sum=(a,b)=>{
+    console.log(a+b);
+}
+sum(100,50);
+sum(-1,10);
+sum(100,100);
+
+//Task 53
+isEven=(n)=>{
+    return (n%2==0)?  true : false;   
+}
+
+let ans=isEven(parseInt(prompt("enter n to check if even:")));
+if(ans)
+    console.log( "Number is even");
+
+else console.log("Number is odd");
+//Task 54
+     
+maxValue=(a,b)=>{
+    return (a>b)?a:b;
+}
+
+let r=maxValue(parseInt(prompt("enter a value:")),parseInt(prompt("enter b value:")));
+console.log("max value is:"+r);
+//Task 55
+
+let myObject={
+value:10,
+ multiplyTraditional(a){
+   return a*this.value;
+ },
+ multiplyArrow:(a)=>{
+    return a*myObject.value;//cant use this for arrow function...only can usee object name to access the property in the same..block
+ }
+};
+console.log(myObject.multiplyTraditional(4));
+console.log(myObject.multiplyArrow(5));
+
+
+</script>
